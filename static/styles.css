@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0b1118;
+  /* 设置深蓝色背景 */
+}
+
+/* 修改 navbar 的樣式 */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /* 背景色與 navbar 一致 */
+  display: flex;
+  /* 添加这一行 */
+  justify-content: flex-end;
+  /* 添加这一行 */
+}
+
+.navbar li {
+  display: inline-flex;
+}
+
+.navbar a {
+  transition: background-color 0.3s ease;
+  /* 添加过渡效果 */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  background-color: #555;
+  /* Change background color on hover and active */
+}
+
+/* 修改主要內容區域的頂部 margin */
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  /* 与 .navbar 相同的背景颜色 */
+  /* 其他样式... */
+}
+
+footer p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+article {
+  width: 750px;
+  /* 适当调整宽度，根据实际需求调整 */
+  /* 其他样式... */
+}
+
+h2 {
+  color: #ffffff;
+  /* 使 h2 元素水平居中 */
+  /* 其他样式... */
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+
+
+.articleContainer {
+  width: 75%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  /* 在水平方向上居中 */
+  align-items: center;
+  /* 在垂直方向上居中 */
+  padding: 0px;
+  border: 1px solid rgb(39, 39, 39);
+  margin: 10px;
+  background-color: #353535;
+  /* 设置背景色为浅灰色 */
+  border-radius: 5px;
+  /* 添加圆角，数值可以根据需要调整 */
+  /* 其他样式... */
+}
+
+.articleContainer a {
+  color: #ffffff;
+  text-decoration: none;
+  /* 保持链接颜色与父元素一致 */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* 使用 grid 布局，创建一个 grid，分为左右两列 */
+  grid-template-columns: 1fr 2fr;
+}
+
+.articleContainer-left {
+  /* 左边部分的样式 */
+  padding: 10px;
+  /* 可以根据需要调整内边距等其他样式 */
+}
+
+.articleContainer-right {
+  /* 右边部分的样式 */
+  padding: 10px;
+  /* 可以根据需要调整内边距等其他样式 */
+}
+
+.articleContainer a:hover,
+.articleContainer a:active {
+  background-color: #555;
+  /* Change background color on hover and active */
+}
+
+.intro {
+  color: #ffffff;
+}
+
+hr {
+  border: 0px;
+  /* 移除默认的边框样式 */
+  height: 1px;
+  /* 设置横线高度 */
+  background-color: #ddd;
+  /* 设置横线颜色 */
+  margin: 10px 0;
+  margin-top: 5px;
+  /* 设置上下边距，根据需要调整 */
+}
+
+article {
+  color: white;
+}
+
+article {
+  width: 100%;
+  max-width: 700px;
+  /* 让文章占据整个可用宽度 */
+}
+
+article p {
+  word-wrap: break-word;
+  /* 允许长单词和 URL 换行 */
+  overflow-wrap: break-word;
+  /* 兼容性更好的属性 */
+}
+
+article a {
+  color: #a78383;
+  /* 设置链接文字颜色为白色 */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 小屏幕设备 */
+@media only screen and (max-width: 600px) {
+  body {
+    /* 适应小屏幕的样式 */
+    font-size: 14px;
+    /* 在小屏幕上调整字体大小 */
+  }
+
+  /* 添加其他适应小屏幕的样式... */
+}
