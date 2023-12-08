@@ -1,94 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>R_bin</title>
-  <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
+{% block title %}R_bin{% endblock %}
 
-<body>
+{% block navbar %}
+<nav class="navbar">
+  <!-- Your navigation links go here -->
+  <ul>
+    <li><a href="#" id="back-to-top">Back to Top</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+{% endblock %}
 
-  <nav class="navbar">
-    <!-- Your navigation links go here -->
-    <ul>
-      <li><a href="#home">我的文章</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+{% block content %}
+<main>
+  <!-- Your blog posts go here -->
+  <div class="intro">
+    <h1>Hey, I am R_bin</h1>
+    <p>好想吃豬排飯<br><br>
+      ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢<br><br>
+      寫給自己看的，我盡量寫正確</p>
+  </div>
+  <div class="articleIntro">
+    <h2>我的文章</h2>
+  </div>
+  <hr>
+  <div class="articleContainer">
+    <a href="/article">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        LaTeX 筆記
+      </div>
+    </a>
+  </div>
+  <div class="articleContainer">
+    <a href="/python.html">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        Python 筆記
+      </div>
+    </a>
+  </div>
+  <div class="articleContainer">
+    <a href="/pandas.html">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        Pandas 筆記
+      </div>
+    </a>
+  </div>
+  <div class="articleContainer">
+    <a href="/matplotlib.html">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        Matplotlib 筆記
+      </div>
+    </a>
+  </div>
+  <div class="articleContainer">
+    <a href="/scikitLearn.html">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        Scikit-learn 筆記
+      </div>
+    </a>
+  </div>
 
-  <main>
-    <!-- Your blog posts go here -->
-    <div class="intro">
-      <h1>Hey, I am R_bin</h1>
-      <p>好想吃豬排飯<br><br>
-        ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢ㄏㄞˊ錢<br><br>
-        寫給自己看的，我盡量寫正確</p>
-    </div>
-    <div class="articleIntro">
-      <h2>我的文章</h2>
-    </div>
-    <hr>
-    <div class="articleContainer">
-      <a href="/LaTeX.html">
-        <div class="articleContainer-left">
-          2023-12-7
-        </div>
-        <div class="articleContainer-right">
-          LaTeX 筆記
-        </div>
-      </a>
-    </div>
-    <div class="articleContainer">
-      <a href="/python.html">
-        <div class="articleContainer-left">
-          2023-12-7
-        </div>
-        <div class="articleContainer-right">
-          Python 筆記
-        </div>
-      </a>
-    </div>
-    <div class="articleContainer">
-      <a href="/pandas.html">
-        <div class="articleContainer-left">
-          2023-12-7
-        </div>
-        <div class="articleContainer-right">
-          Pandas 筆記
-        </div>
-      </a>
-    </div>
-    <div class="articleContainer">
-      <a href="/matplotlib.html">
-        <div class="articleContainer-left">
-          2023-12-7
-        </div>
-        <div class="articleContainer-right">
-          Matplotlib 筆記
-        </div>
-      </a>
-    </div>
-    <div class="articleContainer">
-      <a href="/scikitLearn.html">
-        <div class="articleContainer-left">
-          2023-12-7
-        </div>
-        <div class="articleContainer-right">
-          Scikit-learn 筆記
-        </div>
-      </a>
-    </div>
-
-    <!-- Add more articles as needed -->
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Your Blog Name. All rights reserved.</p>
-  </footer>
-</body>
-
-</html>
+  <!-- Add more articles as needed -->
+</main>
+{% endblock %}

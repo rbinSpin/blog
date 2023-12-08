@@ -8,7 +8,12 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# 返回 index.html
+# 回傳 index.html
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
+# 回傳 index.html
+@app.get("/article", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("LaTeX.html", {"request": request})
