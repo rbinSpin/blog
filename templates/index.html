@@ -28,7 +28,7 @@
   <hr>
   {% for doc in all_doc %}
   <div class="articleContainer">
-    <a href="/article">
+    <a href="/article/{{doc.id}}">
       <div class="articleContainer-left">
         2023-12-7
       </div>
@@ -38,57 +38,6 @@
     </a>
   </div>
   {% endfor %}
-
-  <div class="articleContainer">
-    <a href="/article">
-      <div class="articleContainer-left">
-        2023-12-7
-      </div>
-      <div class="articleContainer-right">
-        LaTeX 筆記
-      </div>
-    </a>
-  </div>
-  <div class="articleContainer">
-    <a href="/python.html">
-      <div class="articleContainer-left">
-        2023-12-7
-      </div>
-      <div class="articleContainer-right">
-        Python 筆記
-      </div>
-    </a>
-  </div>
-  <div class="articleContainer">
-    <a href="/pandas.html">
-      <div class="articleContainer-left">
-        2023-12-7
-      </div>
-      <div class="articleContainer-right">
-        Pandas 筆記
-      </div>
-    </a>
-  </div>
-  <div class="articleContainer">
-    <a href="/matplotlib.html">
-      <div class="articleContainer-left">
-        2023-12-7
-      </div>
-      <div class="articleContainer-right">
-        Matplotlib 筆記
-      </div>
-    </a>
-  </div>
-  <div class="articleContainer">
-    <a href="/scikitLearn.html">
-      <div class="articleContainer-left">
-        2023-12-7
-      </div>
-      <div class="articleContainer-right">
-        Scikit-learn 筆記
-      </div>
-    </a>
-  </div>
 
   <!-- Add more articles as needed -->
 </main>
