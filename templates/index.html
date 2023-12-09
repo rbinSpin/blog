@@ -26,6 +26,19 @@
     <h2>我的文章</h2>
   </div>
   <hr>
+  {% for doc in all_doc %}
+  <div class="articleContainer">
+    <a href="/article">
+      <div class="articleContainer-left">
+        2023-12-7
+      </div>
+      <div class="articleContainer-right">
+        {{doc.title}}
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+
   <div class="articleContainer">
     <a href="/article">
       <div class="articleContainer-left">
