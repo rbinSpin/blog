@@ -2,22 +2,22 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "阿賓 Blog"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
+  # logo = "img/goose_no_background.png"
+  # secondaryLogo = "img/.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "Your name here"
+[params.author]
+  name = "阿賓"
 #   email = "youremail@example.com"
-#   image = "img/blowfish_logo.png"
+  image = "img/goose_shrink.png"
 #   imageQuality = 96
 #   headline = "I'm only human"
 #   bio = "A little bit about you"
